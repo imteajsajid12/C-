@@ -121,9 +121,8 @@ void problem7(){ // array value print
     }
     
 }
-
 void problem8(){ // value of array
-    int size =0;
+    int size=0;
     int numbers[] = {7, 5, 6, 12, 35};
     for (int i : numbers) {
         size ++;
@@ -132,11 +131,84 @@ void problem8(){ // value of array
     
 }
 
+void problem9(){ // input to add data to array
+    int size ;
+    int lanth=0;
+    int data;
+    std::cout << "Enter the size of array :";
+    std::cin>> size;
+    
+
+    int myArray[] = {};
+    
+    for (int i = 0; i < size; ++i) {
+        std::cout << "Enter the value:";
+        std::cin>> data;
+           myArray[i] = data;
+       }
+    
+    for (int i = 0; i < size; ++i) {
+        std::cout << "array value is:"<< myArray[i] <<"\n";
+       }
+    
+    
+    
+    for (int i : myArray) {
+        size ++;
+        std:: cout  << " array data  is  "<<myArray[lanth++]  <<"\n";
+        
+    }
+    std:: cout  << " array size  is  "<< size <<"\n";
+    
+}
+
+void problem10(){ //sorting array
+    
+    
+    int size;
+      
+     std:: cout<<"Enter the size of array: ";std:: cin>>size;
+      
+      int a[size];
+      
+     
+    for(int i=0; i<size; i++){// add value to array
+        std:: cout<< i + 1 <<"\n Enter the elements: " ;
+        std::cin>>a[i];
+    }
+    
+    for(int i=0; i<size; i++) // swap value
+    {
+        for(int j=i+1; j<size; j++) {
+            if(a[i]>a[j])
+                   {
+                       int temp = a[i];
+                       a[i] = a[j];
+                       a[j] = temp;
+                   }
+               }
+        
+    }
+    
+    std:: cout<<  "\n sorting  array is: " ;
+    
+    for(int i=0; i<size; i++) // swap
+    {
+        std:: cout<< a[i] <<",  " ;
+    }
+    
+}
+
+
+
+
+
+
 
 int main(int argc, const char * argv[]) { //odd and even number
     // insert code here...
 //    problem2();
-    problem8();
+    problem10();
     return 0;
 }
 
