@@ -51,12 +51,38 @@ void problem3(){  // lanth of input text;
     
 }
 
+void problem4()
+{
+    int a;
+    int b;
+    int c;
+    std::cout << "Enter the 1st value :";
+    std::cin>> a;   
+    std::cout << "Enter the 2nd value :";
+    std::cin>> b;
+    std::cout << "Enter the 3rd value :";
+    std::cin>> c;
+    
+    std:: cout << "The big value is  : ";
+      
+        if (a >= b && a >= c) {
+            std:: cout << a ;
+        }
+        else if (b >= a && b >= c) {
+            std:: cout << b ;
+        }
+        else {
+            std:: cout << c ;
+        }
+    std:: cout << "\n";
+}
+
 
 
 int main(int argc, const char * argv[]) { //odd and even number
     // insert code here...
 //    problem2();
-    problem3();
+    problem4();
     return 0;
 }
 
