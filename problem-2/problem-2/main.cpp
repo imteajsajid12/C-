@@ -6,7 +6,10 @@
 //
 
 #include <iostream>
+#include <bitset>
 #include <cstring>
+
+
 
 
 
@@ -236,6 +239,15 @@ void problem11(){ //sorting array
     }
     
 }
+void problem12() 
+{
+    int decimal = 7;
+    
+    std::bitset<32> binary(decimal);
+
+    std::cout << "Binary equivalent: " << binary << std::endl;
+}
+
 
 
 
@@ -245,7 +257,7 @@ void problem11(){ //sorting array
 int main(int argc, const char * argv[]) { //odd and even number
     // insert code here...
 //    problem2();
-    problem11();
+    problem12();
     return 0;
 }
 
