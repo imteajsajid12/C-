@@ -200,6 +200,43 @@ void problem10(){ //sorting array
 }
 
 
+void problem11(){ //sorting array
+    
+    
+    int size;
+      
+     std:: cout<<"Enter the size of array: ";std:: cin>>size;
+      
+      int a[size];
+      
+     
+    for(int i=0; i<size; i++){// add value to array
+        std:: cout<< i + 1 <<"\n Enter the elements: " ;
+        std::cin>>a[i];
+    }
+    
+    for(int i=0; i<size; i++) // swap value
+    {
+        for(int j=i+1; j<size; j++) {
+            if(a[i]<a[j])
+                   {
+                       int temp = a[i];
+                       a[i] = a[j];
+                       a[j] = temp;
+                   }
+               }
+        
+    }
+    
+    std:: cout<<  "\n sorting  array is: " ;
+    
+    for(int i=0; i<size; i++) // swap
+    {
+        std:: cout<< a[i] <<",  " ;
+    }
+    
+}
+
 
 
 
@@ -208,7 +245,7 @@ void problem10(){ //sorting array
 int main(int argc, const char * argv[]) { //odd and even number
     // insert code here...
 //    problem2();
-    problem10();
+    problem11();
     return 0;
 }
 
