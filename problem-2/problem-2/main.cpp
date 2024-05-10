@@ -122,11 +122,21 @@ void problem7(){ // array value print
     
 }
 
+void problem8(){ // value of array
+    int size =0;
+    int numbers[] = {7, 5, 6, 12, 35};
+    for (int i : numbers) {
+        size ++;
+    }
+    std:: cout  << " array size  is  "<< size <<"\n";
+    
+}
+
 
 int main(int argc, const char * argv[]) { //odd and even number
     // insert code here...
 //    problem2();
-    problem7();
+    problem8();
     return 0;
 }
 
