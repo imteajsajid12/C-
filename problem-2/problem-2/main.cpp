@@ -79,10 +79,29 @@ void problem4()
 
 
 
+void problem5()  // check is Alphabet or not
+{
+    
+    char value;
+    std::cout << "Enter the value :";
+    std::cin>> value;
+    if (isalpha(value)) {
+        std:: cout << value <<"is Alphabet" ;
+    }
+    else{
+        std:: cout << value <<" is not Alphabet" ;
+    }
+    std:: cout << "\n";
+
+    
+}
+
+
+
 int main(int argc, const char * argv[]) { //odd and even number
     // insert code here...
 //    problem2();
-    problem4();
+    problem5();
     return 0;
 }
 
