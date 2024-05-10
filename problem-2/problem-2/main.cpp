@@ -96,12 +96,26 @@ void problem5()  // check is Alphabet or not
     
 }
 
+void problem6() //leep yeear or not
+{
+    int year;
+    std::cout << "Enter the year :";
+    std::cin>> year;
+    if( year % 400 ==0 or year % 4==0){
+       std:: cout << "Leap Year";
+        
+    }
+    else {
+        std:: cout << "not Leap Year";
+    }
+    std:: cout << "\n";
+}
 
 
 int main(int argc, const char * argv[]) { //odd and even number
     // insert code here...
 //    problem2();
-    problem5();
+    problem6();
     return 0;
 }
 
