@@ -111,11 +111,22 @@ void problem6() //leep yeear or not
     std:: cout << "\n";
 }
 
+// array
+
+void problem7(){ // array value print
+    int numbers[] = {7, 5, 6, 12, 35};
+
+    for (int i = 0; i < 5; i++) {
+        std:: cout << i << " index value  is  "<< numbers[i] <<"\n";
+    }
+    
+}
+
 
 int main(int argc, const char * argv[]) { //odd and even number
     // insert code here...
 //    problem2();
-    problem6();
+    problem7();
     return 0;
 }
 
